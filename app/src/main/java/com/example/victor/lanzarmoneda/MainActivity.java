@@ -10,9 +10,13 @@ import android.widget.Toast;
 
 import java.util.Random;
 
+/**
+ * @author Victor
+ */
 
 public class MainActivity extends Activity implements View.OnClickListener{
 
+    //La variable de nuestro boton se llamara button1
      Button button1;
 
 
@@ -50,16 +54,20 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public void lanzarMoneda(){
 
         //Creamos Array, 1 cara, 0 cruz
-        String [] moneda = {"0","1"};
+        String [] moneda = {"Cara","Cruz"};
+        //Creamos un random para ir pasando los valores del array aleatoriamente
         Random random = new Random();
         String aleatorio= moneda[random.nextInt(moneda.length)];
-        Toast.makeText(MainActivity.this,aleatorio,Toast.LENGTH_LONG).show();
+
+        //Creamos un Toast para que saque los valores del array en mensajes por pantalla
+        Toast.makeText(MainActivity.this,aleatorio,Toast.LENGTH_SHORT).show();
 
     }
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            //Caso por cada boton que tengas
+            /*Creamos un switch donde en el caso del boton
+            creado se llamara al método lanzarMoneda*/
             case(R.id.button):
                 lanzarMoneda();
                 break;

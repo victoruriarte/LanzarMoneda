@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="#ff748eff">
+    android:background="#ff3e9e16">
 
     <Button
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#ff0087ff"
+        android:background="#ff087612"
         android:textColor="#ffffffff"
         android:onClick="onClick" />
 </RelativeLayout>
