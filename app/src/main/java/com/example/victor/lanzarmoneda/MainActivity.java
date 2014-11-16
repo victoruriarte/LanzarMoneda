@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     public void lanzarMoneda(){
 
-        //Creamos Array, 1 cara, 0 cruz
+        //Creamos Array con los valores Cara y Cruz
         String [] moneda = {"Cara","Cruz"};
         //Creamos un random para ir pasando los valores del array aleatoriamente
         Random random = new Random();
